@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemesanan Barang</title>
+</head>
+<body style="background-color:white ;">
+    <fieldset style="background-color:beige ;">
+        <table style="text-align: center;" border="0">
+            <thead>
+                <p style="text-align :center ;"> <b>Pemesanan Barang</b></p>
+            </thead>
+            <tbody>
+             
+            </tbody>
+        </table>
+        <hr>
+        <table border="1px" style="width:500px;" align="center">
+            <thead align="center">
+                <tr>
+                    <th>
+                        <a href="#">Home |</a>
+                        <a href="#">Generate Link |</a>
+                        <a href="#">Transaction History |</a>
+                        <a href="#">Policy |</a>
+                        <a href="#">Logout |</a>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <br> 
+        <form action="barang.html" method="post">
+        <table>
+            <tbody>
+                <tr>
+                    <td rowspan="15" style="width:350px ; text-align:center;"><img src="macbookair.jpg" alt="barang" width="300px" height="300px">
+                        <br>
+                        <label for="barang1"></label>
+                        <br>
+                        <input type="submit" value="Upload Picture">
+                    </td>
+                    <td style="width:200px ;"> Tittle Here : </td>
+                    <td style="width:600px ;">: <input type="text" name="nama" id="nama" placeholder="MacBook Air (M1, 2020) "></td>
+                </tr>
+
+                <tr>
+                    <td><br>Description</td>
+                    <td>: <textarea name="deskripsi" id="decs" placeholder="PROSESOR :Apple M1 Chip CPU 8-Core, GPU 7-care"></textarea></td>
+                </tr>
+
+                <tr>
+                    <td> Account Number</td>
+                    <td> : <input type="number" width="600px" placeholder="123-456-789-0"></td>
+                </tr>
+                
+                <tr>
+                    <td>Bank</td>
+                    <td>  :
+                        <select>
+                            <option value="HSBC">
+                                HSBC
+                            </option>
+                            <option value="BTN">
+                                BTN
+                            </option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> Account Holder</td>
+                    <td>: <input type="text" placeholder="Name Here"></td>
+                </tr>
+
+                <tr>
+                    <td>Transaction<br><br><br><br></td>
+                    <td> :
+                        <select>
+                            <option value="1">
+                                1
+                            </option>
+                            <option value="2">
+                                2
+                            </option>
+                        </select>
+                        <br>
+                        *if the transaction is for 3 person, choose 3 from the drop-down list
+                        <br>
+                        <input type="checkbox" id="check1"> <label for="check1" style="color: green"> Send to mobile phone</label>
+                        <br>
+                        <input type="checkbox" id="check2"> <label for="check2" style="color: green"> Send to Email</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Send to Mobile Phone </td>
+                    <td>: <input type="number" placeholder="081234567890"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="email">Send to Email:</label> </td>       
+                    <td>: <input type="text" id="email" placeholder="sunrise11@gmail.com"></td>
+                </tr>
+                <tr>
+                    <td><button type="submit" style="border: 1px solid #77815c; margin-top: 5px; width: 200px; background: rgb(53, 192, 35); color: white; height:30px;"> Submit  </button></td>
+                </tr>
+                </html>
+                
+              
