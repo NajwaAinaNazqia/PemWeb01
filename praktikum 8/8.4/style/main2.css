@@ -1,0 +1,65 @@
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+    padding: 15px;
+    background-color: white;
+}
+
+header{
+    height: 8vh;
+    background: rgb(231, 209, 231);
+    padding: 20px;
+   
+}
+
+footer{
+    height: 8vh;
+    background:  rgb(248, 243, 189);
+    padding: 20px;
+}
+
+header, footer, article, aside{
+    padding: 2em;
+    margin-top: 7px;
+    margin-bottom: 7px;
+   
+}
+
+#main{
+    display: flex;
+    flex: 1;
+}
+
+#main article{
+    
+        flex: 1;
+        order: 2;
+        background-color: peachpuff;
+}
+
+
+#main aside{
+    flex: 0 0 30vw;
+    margin-right: 40px;
+}
+
+#main > aside{
+    background-color: rgb(247, 205, 212);
+    order: 1;   
+}
+
+.img{
+    display: flex;
+}
+
+img{
+    text-align: center;
+    flex-direction: row;
+    margin: 3px;
+    padding-top: 200px;
+    width: 240px;
+    height: 200px;
+}
+

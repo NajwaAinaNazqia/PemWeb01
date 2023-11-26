@@ -1,0 +1,33 @@
+body{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+header, footer{
+    background-color: rgb(253, 219, 225);
+    height: 20vh;
+}
+
+#main{
+    display: flex;
+}
+
+#main aside,
+#main nav{
+    height: 60vh;
+    flex: 0 0 20vw;
+}
+
+
+#main nav{
+    background-color: plum;
+}
+
+#main aside{
+    background-color: rgb(219, 127, 158);
+}
+
+#main article{
+    flex: 1;
+}

@@ -1,0 +1,23 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: antiquewhite;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+img {
+    width: 5em;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+
+}

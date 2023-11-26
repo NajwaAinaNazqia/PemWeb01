@@ -1,0 +1,44 @@
+body{
+    display: flex;
+}
+
+.container{
+    min-height: 100vh;
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    margin: 0;
+}
+
+header, footer{
+    height: 20vh;
+    background: aquamarine;
+}
+
+header, footer, article, aside{
+    padding: 1em;
+}
+
+nav{
+    background-color: aliceblue;
+    width: 23vw;
+}
+
+#main{
+    display: flex;
+    flex: 3;
+}
+
+#main > article{
+    flex: 1;
+    order: 1;
+}
+
+#main aside{
+    flex: 0 0 20vw;
+}
+
+#main > aside{
+    background-color: azure;
+    order: 3;
+}
