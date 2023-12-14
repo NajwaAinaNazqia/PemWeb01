@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung Kurs Rupiah</title>
+</head>
+<body>
+    <script>
+        function hitung_rupiah() {
+            let r = document.getElementById("rupiah2").value;
+            let hasil = r * (1 / 14650);
+            console.log(hasil)
+            document.getElementById("hasil2").value = "$" + hasil.toFixed(2);
+        }
+    </script>
+    <h2>Menghitung Kurs Rupiah</h2>
+      <form>
+        Rupiah : <input type="number" id="rupiah2">
+        <br>
+        Dollar : <input type="text" id="hasil2">
+        <br>
+        <input type="button" value="Hitung" onclick="hitung_rupiah()">
+      
+    </form>
+</body>
+</html>
