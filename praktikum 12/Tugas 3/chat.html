@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ChatBox</title>
+    <style>
+        .container{
+            width: 100%;
+        }
+
+        #box{
+            width: 75%;
+            border: 1px solid black;
+            height: 500px;
+            padding: 0px 5px;
+        }    
+        
+        #pesan{
+            width: 72%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box"></div>
+        <input type="text" id="pesan">
+        <input type="button" value="Kirim" onclick="chat()">
+    </div>
+
+    <script>
+        let chatbox = document.getElementById("box");
+        let pesanku = document.getElementById("pesan");
+
+        function chat(){
+            let paragraf = document.createElement("p")
+            chatbox.appendChild(paragraf);
+            paragraf.innerHTML = pesanku.value;
+        }
+
+    </script>
+</body>
+</html>

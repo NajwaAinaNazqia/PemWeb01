@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Image_Picker(){
+            const list_image = ["koala.png", "singa.png", "kelinci.png"];
+            let piilihan = document.getElementById("opsi").value;
+
+            if(piilihan == "koala"){
+                let select = list_image[0]; ///koala.png
+                document.getElementById("gambar").src = `img/${select}`;
+               
+
+            }
+
+            if(piilihan == "singa"){
+                let select = list_image[1]; ///singa.png
+                document.getElementById("gambar").src = `img/${select}`;
+
+            }
+
+            if(piilihan == "kelinci"){
+                let select = list_image[2]; ///kelinci.png
+                document.getElementById("gambar").src = `img/${select}`;
+
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <h1>Image Picker</h1>
+
+    <select name="" id="opsi" onchange="Image_Picker()">
+        <option value="">Pilih Gambar</option>
+        <option value="koala">Koala</option>
+        <option value="singa">Singa</option>
+        <option value="kelinci">Kelinci</option>
+    </select>
+    
+    <div class="container">
+        <img id="gambar" width="200px">
+    </div>
+</body>
+</html>
